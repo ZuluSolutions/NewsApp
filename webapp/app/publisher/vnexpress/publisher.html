@@ -1,0 +1,30 @@
+<div class="scrollable">
+    <div class="scrollable-content">
+        <div class="list-group">
+            <div class="list-group-item text-justify">
+                <a href="#/view2?url={{big_hot_news.href}}">
+                    <img src="{{big_hot_news.image.src}}" alt="{{big_hot_news.image.alt}}">
+                </a>
+                <a href="#/view2?url={{big_hot_news.href}}">
+                    <h1>{{big_hot_news.title}}</h1>
+                </a>
+                <p>{{big_hot_news.lead}}...</p>
+            </div>
+
+            <div class="list-group-item text-justify" ng-repeat="news in listHotNews">
+                <a href="#/view2?url={{news.href}}">
+                    <h3 class="media-heading" >{{news.title_news}}</h3>
+                </a>
+                <div class="media-body">
+                    <a class="thumbnail pull-left" href="#/view2?url={{news.href}}">
+                        <img src="{{news.image.src}}">
+                    </a>
+                    <p>{{news.news_lead}}...</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+

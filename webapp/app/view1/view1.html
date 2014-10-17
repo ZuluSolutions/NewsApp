@@ -1,0 +1,45 @@
+<div class="scrollable">
+    <div class="scrollable-content">
+        <div class="list-group">
+            <div class="list-group-item news" ng-repeat="entry in entries">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="#/view2?url={{entry.link}}">
+                                <img src="{{entry.image}}">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#/view2?url={{entry.link}}">
+                                <strong class="media-heading">{{entry.title}}</strong>
+                            </a>
+                            <p>{{entry.source}} - {{entry.publishedDate}}</p>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <!--<div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" toggle target="{{news.id}}">
+                            <h4 class="panel-title">
+                                #1
+                            </h4>
+                        </div>
+                        <div id="{{news.id}}" toggleable active-class="in" exclusion-group="accordion1" default="inactive" class="panel-collapse collapse">
+                            <div class="">
+                                {{entry.contentSnippet}}
+                            </div>
+                        </div>
+                        <div class="panel-heading" toggle target="{{news.id}}">
+                            <h4 class="panel-title">
+                                #1
+                            </h4>
+                        </div>
+
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
