@@ -8,8 +8,7 @@ angular.module('myApp', [
   'myApp.view1',
   'myApp.view2',
   'myApp.home',
-  'myApp.menu',
-  'myApp.version'
+  'myApp.menu'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/vnexpress'});
